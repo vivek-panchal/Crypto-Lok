@@ -3,6 +3,14 @@ import { Switch, Route, Link } from 'react-router-dom';
 import { Layout, Typography, Space } from 'antd';
 
 import { Exchanges, Homepage, News, Cryptocurrencies, CryptoDetails, Navbar } from './components';
+import {
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+} from "react-icons/fa";
+import {
+  SiLeetcode,
+} from "react-icons/si";
 import './App.css';
 
 const App = () => (
@@ -39,11 +47,29 @@ const App = () => (
           </Link> <br />
           All Rights Reserved.
         </Typography.Title>
-        <Space>
-          <Link to="/">Home</Link>
-          <Link to="/exchanges">Exchanges</Link>
-          <Link to="/news">News</Link>
-        </Space>
+        <div className="socialIcons">
+                    <a className="icon" href="https://www.linkedin.com/in/vivekpanchal2608/" target="_blank">
+                        <span className="icon">
+                            <FaLinkedin />
+                        </span>
+                    </a> 
+                    <a className="icon" href="https://leetcode.com/vivekpanchal/" target="_blank">
+                        <span className="icon">
+                            <SiLeetcode />
+                        </span>
+                    </a> 
+                    <a className="icon" href="https://github.com/vivek-panchal" target="_blank">
+                        <span className="icon">
+                            <FaGithub />
+                        </span>
+                    </a> 
+                    <a className="icon" href="https://www.instagram.com/vivekpaanchal/" target="_blank">
+                        <span className="icon">
+                            <FaInstagram />
+                        </span>
+                    </a> 
+                   
+                </div>
       </div>
     </div>
   </div>
